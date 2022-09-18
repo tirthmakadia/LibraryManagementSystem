@@ -1,0 +1,31 @@
+<!DOCT html >
+<html>
+<head>
+    <title> </title>
+      <link rel = " stylesheet " href = " https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css " >
+</head>
+<body>
+<div class = " container " >
+    <form method="post" action="/">
+        {% csrf_token %}
+         <div class = " form - group " >
+         <label ><b> User name : </b> </label >
+         {{form.bname}}
+    </div >
+        <div class = " form - group " >
+         <label ><b> User name : </b> </label >
+         {{form.bauthor}}
+    </div >
+        <div class = " form - group " >
+         <label ><b> User name : </b> </label >
+         {{form.bsubject}}
+    </div >
+        <div class = " form - group " >
+         <label ><b> User name : </b> </label >
+         {{form.bprice}}
+    </div >
+    <input type="submit" name="insert" value="Insert" class="btn btn - primary">
+    </form>
+</div>
+</body>
+</html>
